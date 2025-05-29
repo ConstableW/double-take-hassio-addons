@@ -1,0 +1,12 @@
+{
+  "name": "InsightFace-REST",
+  "version": "0.1.0",
+  "slug": "insightface-rest",
+  "description": "InsightFace REST API für lokale, schnelle Gesichtserkennung",
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "18081/tcp": 18081
+  },
+  "image": "sthphoenix/insightface-rest:latest"
+}
