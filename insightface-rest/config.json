@@ -12,5 +12,5 @@
   "webui": "http://[HOST]:[PORT:18080]",
   "ingress": false,
   "host_network": true,
-  "image": "ghcr.io/YOUR_GITHUB_USERNAME/insightface-rest-{arch}"
+  "image": "ghcr.io/ConstableW/insightface-rest-{arch}"
 }
