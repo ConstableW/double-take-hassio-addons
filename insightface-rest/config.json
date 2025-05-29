@@ -1,12 +1,16 @@
 {
-  "name": "InsightFace-REST",
-  "version": "0.1.0",
-  "slug": "insightface-rest",
-  "description": "InsightFace REST API für lokale, schnelle Gesichtserkennung",
+  "name": "InsightFace REST",
+  "version": "1.0.0",
+  "slug": "insightface_rest",
+  "description": "Face recognition REST API using InsightFace",
+  "arch": ["amd64", "aarch64"],
   "startup": "services",
   "boot": "auto",
   "ports": {
-    "18081/tcp": 18081
+    "18080/tcp": 18080
   },
-  "image": "sthphoenix/insightface-rest:latest"
+  "webui": "http://[HOST]:[PORT:18080]",
+  "ingress": false,
+  "host_network": true,
+  "image": "ghcr.io/YOUR_GITHUB_USERNAME/insightface-rest-{arch}"
 }
